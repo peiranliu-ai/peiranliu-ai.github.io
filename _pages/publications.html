@@ -8,7 +8,82 @@ author_profile: true
 <style>
   @media screen and (min-width: 1024px) {
     .archive {
-      transform: translateX(-1rem);
+      transform: translateX(-5rem);
+    }
+  }
+
+  .publication-section {
+    margin-top: 1.6rem;
+  }
+
+  .publication-section h2 {
+    margin-bottom: 0.25rem;
+  }
+
+  .publication-section hr {
+    margin: 0.25rem 0 0.9rem;
+  }
+
+  .publication-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.85rem;
+  }
+
+  .publication-grid .list__item {
+    min-width: 0;
+    margin: 0;
+  }
+
+  .publication-grid .archive__item {
+    height: 100%;
+    padding: 0.65rem;
+    border: 1px solid #d9e2ea;
+    border-radius: 6px;
+    background: #fff;
+  }
+
+  .publication-grid .archive__item-title {
+    margin: 0 0 0.35rem;
+    font-size: 0.58rem;
+    line-height: 1.25;
+  }
+
+  .publication-grid .archive__item p,
+  .publication-grid .archive__item-excerpt {
+    margin: 0.25rem 0;
+    font-size: 0.5rem;
+    line-height: 1.35;
+  }
+
+  .publication-grid .archive__item a {
+    overflow-wrap: anywhere;
+  }
+
+  @media screen and (max-width: 1180px) {
+    .publication-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  @media screen and (max-width: 760px) {
+    .publication-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media screen and (max-width: 520px) {
+    .publication-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .publication-grid .archive__item-title {
+      font-size: 0.82rem;
+    }
+
+    .publication-grid .archive__item p,
+    .publication-grid .archive__item-excerpt {
+      font-size: 0.72rem;
     }
   }
 </style>
@@ -28,14 +103,22 @@ author_profile: true
         {% continue %}
       {% endif %}
       {% unless title_shown %}
+        <section class="publication-section">
         <h2>{{ category[1].title }}</h2><hr />
+        <div class="publication-grid">
         {% assign title_shown = true %}
       {% endunless %}
       {% include archive-single.html %}
     {% endfor %}
+    {% if title_shown %}
+        </div>
+        </section>
+    {% endif %}
   {% endfor %}
 {% else %}
+  <div class="publication-grid">
   {% for post in site.publications reversed %}
     {% include archive-single.html %}
   {% endfor %}
+  </div>
 {% endif %}
