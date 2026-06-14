@@ -8,6 +8,12 @@ author_profile: true
 {% include base_path %}
 
 <style>
+  @media screen and (min-width: 1024px) {
+    .archive {
+      transform: translateX(-4rem);
+    }
+  }
+
   .research-focus {
     --ink: #142236;
     --navy: #0f2f52;
@@ -204,12 +210,6 @@ author_profile: true
     top: 23%;
     left: 7%;
     width: 22%;
-  }
-
-  @media (min-width: 1121px) {
-    .research-focus {
-      margin-left: -7.5rem;
-    }
   }
 
   @media (max-width: 1120px) {
