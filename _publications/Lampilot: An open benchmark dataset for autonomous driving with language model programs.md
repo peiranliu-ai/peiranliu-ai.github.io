@@ -2,7 +2,8 @@
 title: "Lampilot: An open benchmark dataset for autonomous driving with language model programs"
 collection: publications
 category: conferences
-permalink: https://openaccess.thecvf.com/content/CVPR2024/html/Ma_LaMPilot_An_Open_Benchmark_Dataset_for_Autonomous_Driving_with_Language_CVPR_2024_paper.html
+permalink: /publication/lampilot
+link: https://openaccess.thecvf.com/content/CVPR2024/html/Ma_LaMPilot_An_Open_Benchmark_Dataset_for_Autonomous_Driving_with_Language_CVPR_2024_paper.html
 excerpt: LLM, Autonomous Driving, Transportation
 date: 2024-3-1
 venue: 'IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)'

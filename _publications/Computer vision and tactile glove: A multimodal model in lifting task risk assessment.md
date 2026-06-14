@@ -2,7 +2,8 @@
 title: "Computer vision and tactile glove: A multimodal model in lifting task risk assessment"
 collection: publications
 category: manuscripts
-permalink: https://www.sciencedirect.com/science/article/abs/pii/S0003687025000493
+permalink: /publication/computer-vision-tactile-glove-lifting-risk
+link: https://www.sciencedirect.com/science/article/abs/pii/S0003687025000493
 excerpt: Computer vision, Tactile gloves, Lifting risk prediction
 date: 2025-09-01
 venue: 'Applied Ergonomics'
