@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 <style>
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1600px) {
     .archive {
       transform: translateX(-5rem);
     }
