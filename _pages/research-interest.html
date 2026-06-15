@@ -29,10 +29,10 @@ author_profile: true
     --ai-agents: #e9f1e2;
     --ai-software: #f1e7d4;
     display: grid;
-    grid-template-columns: minmax(500px, 1fr) minmax(520px, 580px);
-    gap: 2.2rem;
+    grid-template-columns: minmax(500px, 1fr) minmax(360px, 420px);
+    gap: 1.1rem;
     align-items: center;
-    max-width: 1220px;
+    max-width: 1120px;
     margin: 1.8rem auto 0;
     color: var(--ink);
   }
@@ -130,14 +130,8 @@ author_profile: true
     text-align: center;
   }
 
-  @media (min-width: 1121px) {
-    .ai-panel {
-      transform: translateX(3.25rem);
-    }
-  }
-
   .orbit-title {
-    margin: 0 0 0.8rem;
+    margin: 0 0 0.65rem;
     color: var(--muted);
     font-size: 0.72rem;
     font-weight: 700;
@@ -148,7 +142,7 @@ author_profile: true
 
   .orbit {
     position: relative;
-    width: min(100%, 430px);
+    width: min(100%, 330px);
     aspect-ratio: 1;
     margin: 0 auto;
     border-radius: 50%;
@@ -175,60 +169,59 @@ author_profile: true
     text-align: center;
   }
 
-  .orbit-label {
-    position: absolute;
-    color: var(--ink);
-    text-align: center;
+  .wheel-legend {
+    display: grid;
+    gap: 0.5rem;
+    margin-top: 0.85rem;
+    text-align: left;
   }
 
-  .orbit-label h2 {
+  .wheel-legend__item {
+    padding: 0.58rem 0.68rem;
+    border: 1px solid rgba(20, 34, 54, 0.08);
+    border-radius: 8px;
+    box-shadow: 0 10px 22px rgba(32, 61, 83, 0.08);
+  }
+
+  .wheel-legend__item h3 {
     margin: 0 0 0.22rem;
     color: var(--ink);
-    font-size: clamp(0.88rem, 1.1vw, 1.05rem);
+    font-size: 0.74rem;
     font-weight: 800;
-    line-height: 1.1;
-    letter-spacing: 0;
+    line-height: 1.15;
   }
 
-  .orbit-label p {
+  .wheel-legend__item p {
     margin: 0;
-    color: var(--muted);
-    font-size: clamp(0.48rem, 0.64vw, 0.59rem);
+    color: #40546a;
+    font-size: 0.59rem;
     font-weight: 700;
-    line-height: 1.28;
-    letter-spacing: 0;
+    line-height: 1.32;
   }
 
-  .orbit-label--data {
-    top: 23%;
-    right: 9%;
-    width: 22%;
+  .wheel-legend__item--software {
+    background: var(--ai-software);
   }
 
-  .orbit-label--agents {
-    left: 50%;
-    bottom: 8.5%;
-    width: 30%;
-    transform: translateX(-50%);
+  .wheel-legend__item--data {
+    background: var(--ai-data);
   }
 
-  .orbit-label--software {
-    top: 23%;
-    left: 7%;
-    width: 22%;
+  .wheel-legend__item--agents {
+    background: var(--ai-agents);
   }
 
   @media (max-width: 1120px) {
     .research-focus {
       grid-template-columns: 1fr;
       max-width: 560px;
-      gap: 2.5rem;
+      gap: 1.6rem;
     }
   }
 
   @media (max-width: 520px) {
     .research-focus {
-      gap: 2rem;
+      gap: 1.4rem;
       margin-top: 1rem;
     }
 
@@ -237,16 +230,7 @@ author_profile: true
     }
 
     .orbit {
-      width: min(100%, 360px);
-    }
-
-    .orbit-label h2 {
-      font-size: 0.86rem;
-    }
-
-    .orbit-label p {
-      font-size: 0.54rem;
-      line-height: 1.22;
+      width: min(100%, 280px);
     }
 
     .orbit-center {
@@ -259,7 +243,7 @@ author_profile: true
 <div class="research-focus" aria-label="Research interest overview">
   <section class="hdt-pillar" aria-label="Human digital twin research interests">
     <h2>Human Digital Twin</h2>
-    <p class="hdt-pillar__lead">My priority research interest is human digital twin.</p>
+    <p class="hdt-pillar__lead">The Digital Twin is a digital replica of the physical entity in the real world, which leverages big data and cloud/edge computing to benefit human machine system. My research is constructing high-fidelity human digital twins to understand and optimize human-machine interaction.</p>
 
     <div class="hdt-modules">
       <div class="hdt-module">
@@ -304,20 +288,19 @@ author_profile: true
     <p class="orbit-title">AI Flying Wheel for Human Digital Twin</p>
     <div class="orbit">
       <div class="orbit-center">Human<br>Centric AI</div>
-
-      <div class="orbit-label orbit-label--data">
-        <h2>Data</h2>
+    </div>
+    <div class="wheel-legend" aria-label="AI flying wheel components">
+      <div class="wheel-legend__item wheel-legend__item--software">
+        <h3>Software</h3>
+        <p>Algorithms, computer vision, lightweight models, large language models, foundation models</p>
+      </div>
+      <div class="wheel-legend__item wheel-legend__item--data">
+        <h3>Data</h3>
         <p>Multimodal signals, vision and language communication data, benchmarks</p>
       </div>
-
-      <div class="orbit-label orbit-label--agents">
-        <h2>Agents</h2>
+      <div class="wheel-legend__item wheel-legend__item--agents">
+        <h3>Agents</h3>
         <p>Tools, memory, code generation, and action</p>
-      </div>
-
-      <div class="orbit-label orbit-label--software">
-        <h2>Software</h2>
-        <p>Algorithms, computer vision, lightweight models, large language models, foundation models</p>
       </div>
     </div>
   </section>
