@@ -169,6 +169,32 @@ author_profile: true
     text-align: center;
   }
 
+  .orbit-label {
+    position: absolute;
+    color: var(--ink);
+    font-size: 0.82rem;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  .orbit-label--data {
+    top: 27%;
+    right: 15%;
+  }
+
+  .orbit-label--agents {
+    left: 50%;
+    bottom: 13%;
+    transform: translateX(-50%);
+  }
+
+  .orbit-label--software {
+    top: 27%;
+    left: 12%;
+  }
+
   .wheel-legend {
     display: grid;
     gap: 0.5rem;
@@ -237,6 +263,10 @@ author_profile: true
       font-size: 0.96rem;
       padding: 0.65rem;
     }
+
+    .orbit-label {
+      font-size: 0.74rem;
+    }
   }
 </style>
 
@@ -288,6 +318,9 @@ author_profile: true
     <p class="orbit-title">AI Flying Wheel for Human Digital Twin</p>
     <div class="orbit">
       <div class="orbit-center">Human<br>Centric AI</div>
+      <div class="orbit-label orbit-label--data">Data</div>
+      <div class="orbit-label orbit-label--agents">Agents</div>
+      <div class="orbit-label orbit-label--software">Software</div>
     </div>
     <div class="wheel-legend" aria-label="AI flying wheel components">
       <div class="wheel-legend__item wheel-legend__item--software">
