@@ -15,53 +15,54 @@ redirect_from:
   }
 
   .home-news {
-    margin-top: 2rem;
-    padding-top: 0.5rem;
+    margin-top: 1.7rem;
+    padding-top: 0.35rem;
   }
 
   .home-news h2 {
-    margin-bottom: 0.9rem;
-    padding-bottom: 0.35rem;
+    margin-bottom: 0.65rem;
+    padding-bottom: 0.28rem;
     color: #174d78;
-    font-size: 1.18rem;
+    font-size: 1.05rem;
     line-height: 1.25;
     border-bottom: 1px solid #d7e2ea;
   }
 
   .news-list {
     display: grid;
-    gap: 0.72rem;
+    gap: 0.48rem;
   }
 
   .news-item {
     display: grid;
-    grid-template-columns: 6.4rem minmax(0, 1fr);
-    gap: 0.9rem;
-    align-items: start;
-    padding: 0.78rem 0.9rem;
+    grid-template-columns: 5.6rem minmax(0, 1fr);
+    gap: 0.68rem;
+    align-items: center;
+    min-height: 5rem;
+    padding: 0.44rem 0.72rem;
     border: 1px solid #d9e2ea;
     border-left: 4px solid #2c6f9e;
     border-radius: 6px;
     background: #f8fbfd;
   }
 
-  .news-date {
+  .home-news .news-date {
     color: #174d78;
-    font-size: 0.72rem;
+    font-size: 0.6rem;
     font-weight: 800;
     line-height: 1.25;
     letter-spacing: 0;
     text-transform: uppercase;
   }
 
-  .news-text {
+  .home-news .news-text {
     margin: 0;
     color: #263746;
-    font-size: 0.82rem;
-    line-height: 1.45;
+    font-size: 0.66rem;
+    line-height: 1.32;
   }
 
-  .news-text strong {
+  .home-news .news-text strong {
     color: #142236;
     font-weight: 800;
   }
@@ -147,4 +148,3 @@ I am a third year PhD student at [Edwardson School of Industrial Engineering](ht
     </article>
   </div>
 </section>
-
