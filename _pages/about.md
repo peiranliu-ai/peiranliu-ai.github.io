@@ -13,6 +13,65 @@ redirect_from:
       transform: translateX(-5rem);
     }
   }
+
+  .home-news {
+    margin-top: 2rem;
+    padding-top: 0.5rem;
+  }
+
+  .home-news h2 {
+    margin-bottom: 0.9rem;
+    padding-bottom: 0.35rem;
+    color: #174d78;
+    font-size: 1.18rem;
+    line-height: 1.25;
+    border-bottom: 1px solid #d7e2ea;
+  }
+
+  .news-list {
+    display: grid;
+    gap: 0.72rem;
+  }
+
+  .news-item {
+    display: grid;
+    grid-template-columns: 6.4rem minmax(0, 1fr);
+    gap: 0.9rem;
+    align-items: start;
+    padding: 0.78rem 0.9rem;
+    border: 1px solid #d9e2ea;
+    border-left: 4px solid #2c6f9e;
+    border-radius: 6px;
+    background: #f8fbfd;
+  }
+
+  .news-date {
+    color: #174d78;
+    font-size: 0.72rem;
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: 0;
+    text-transform: uppercase;
+  }
+
+  .news-text {
+    margin: 0;
+    color: #263746;
+    font-size: 0.82rem;
+    line-height: 1.45;
+  }
+
+  .news-text strong {
+    color: #142236;
+    font-weight: 800;
+  }
+
+  @media screen and (max-width: 520px) {
+    .news-item {
+      grid-template-columns: 1fr;
+      gap: 0.28rem;
+    }
+  }
 </style>
 
 <!--
@@ -69,4 +128,23 @@ More info about configuring Academic Pages can be found in [the guide](https://a
 
 I am a third year PhD student at [Edwardson School of Industrial Engineering](https://engineering.purdue.edu/IE), [Purdue University](https://www.purdue.edu/), under guidence of [Prof. Denny Yu](https://engineering.purdue.edu/IE/people/ptProfile?resource_id=134078). I hold a Bachelor’s degree in Information Systems in University of Florida. I worked as an intern at [BrainCo](https://brainco.tech/#/) in 2023, and [Coohom](https://www.coohom.com/) [SpatialVerse](https://www.spatial-verse.com/) in 2025. My research focus on safety & usability in transportation and healthcare with AI and digital twin.
 
+<section class="home-news" aria-label="News">
+  <h2>News</h2>
+  <div class="news-list">
+    <article class="news-item">
+      <div class="news-date">October 2025</div>
+      <p class="news-text">Our work <strong>“Are LLMs the New Ergonomists? Predicting Lifting Risks with LLMs And Machine Learning”</strong> is presented at ASPIRE&mdash;The HFES International Annual Meeting 2025 in Chicago.</p>
+    </article>
+
+    <article class="news-item">
+      <div class="news-date">September 2024</div>
+      <p class="news-text">Our work <strong>“Computer vision embedded post-processing algorithm on lifting risks”</strong> is presented at ASPIRE&mdash;The HFES International Annual Meeting 2024 in Phoenix.</p>
+    </article>
+
+    <article class="news-item">
+      <div class="news-date">June 2024</div>
+      <p class="news-text">Our work <strong>“Are LLMs the New Ergonomists? Predicting Lifting Risks with LLMs And Machine Learning”</strong> is presented at the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2024 in Seattle.</p>
+    </article>
+  </div>
+</section>
 
