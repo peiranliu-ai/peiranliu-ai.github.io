@@ -38,7 +38,7 @@ redirect_from:
     grid-template-columns: 5.6rem minmax(0, 1fr);
     gap: 0.68rem;
     align-items: center;
-    min-height: 5rem;
+    min-height: 4.5rem;
     padding: 0.44rem 0.72rem;
     border: 1px solid #d9e2ea;
     border-left: 4px solid #2c6f9e;
@@ -48,7 +48,7 @@ redirect_from:
 
   .home-news .news-date {
     color: #174d78;
-    font-size: 0.6rem;
+    font-size: 0.64rem;
     font-weight: 800;
     line-height: 1.25;
     letter-spacing: 0;
@@ -58,8 +58,8 @@ redirect_from:
   .home-news .news-text {
     margin: 0;
     color: #263746;
-    font-size: 0.66rem;
-    line-height: 1.32;
+    font-size: 0.7rem;
+    line-height: 1.3;
   }
 
   .home-news .news-text strong {
@@ -133,6 +133,16 @@ I am a third year PhD student at [Edwardson School of Industrial Engineering](ht
   <h2>News</h2>
   <div class="news-list">
     <article class="news-item">
+      <div class="news-date">October 2026</div>
+      <p class="news-text">Our work <strong>“Monitoring the Progress of Human-Centered Teaming Communication with Keep Talking Simulation”</strong> has been accepted to the IEEE International Conference on Systems, Man, and Cybernetics (SMC) 2026 in Bellevue.</p>
+    </article>
+
+    <article class="news-item">
+      <div class="news-date">May 2026</div>
+      <p class="news-text">Our work <strong>“Automated Assessment of PPE Compliance with Fast Lightweight Deep Learning Based Computer Vision”</strong> is presented at the IISE Annual Conference 2026 in Arlington, TX.</p>
+    </article>
+
+    <article class="news-item">
       <div class="news-date">October 2025</div>
       <p class="news-text">Our work <strong>“Are LLMs the New Ergonomists? Predicting Lifting Risks with LLMs And Machine Learning”</strong> is presented at ASPIRE&mdash;The HFES International Annual Meeting 2025 in Chicago.</p>
     </article>
@@ -145,6 +155,11 @@ I am a third year PhD student at [Edwardson School of Industrial Engineering](ht
     <article class="news-item">
       <div class="news-date">June 2024</div>
       <p class="news-text">Our work <strong>“Are LLMs the New Ergonomists? Predicting Lifting Risks with LLMs And Machine Learning”</strong> is presented at the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2024 in Seattle.</p>
+    </article>
+
+    <article class="news-item">
+      <div class="news-date">March 2024</div>
+      <p class="news-text">Our work <strong>“Computer vision and tactile glove: A multimodal model in lifting task risk assessment”</strong> is presented at the 27th Annual Applied Ergonomics Conference (AEC) 2024 in Louisville, KY.</p>
     </article>
   </div>
 </section>
