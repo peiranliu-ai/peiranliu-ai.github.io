@@ -134,37 +134,37 @@ I am a third year PhD student at [Edwardson School of Industrial Engineering](ht
   <div class="news-list">
     <article class="news-item">
       <div class="news-date">October 2026</div>
-      <p class="news-text">📌 Our work <strong>“Monitoring the Progress of Human-Centered Teaming Communication with Keep Talking Simulation”</strong> has been accepted to the IEEE International Conference on Systems, Man, and Cybernetics (SMC) 2026 in Bellevue.</p>
+      <p class="news-text">🎉 Our work <strong>“Monitoring the Progress of Human-Centered Teaming Communication with Keep Talking Simulation”</strong> has been accepted to the IEEE International Conference on Systems, Man, and Cybernetics (SMC) 2026 in Bellevue.</p>
     </article>
 
     <article class="news-item">
       <div class="news-date">May 2026</div>
-      <p class="news-text">📌 Our work <strong>“Automated Assessment of PPE Compliance with Fast Lightweight Deep Learning Based Computer Vision”</strong> is presented at the IISE Annual Conference 2026 in Arlington, TX.</p>
+      <p class="news-text">🎙️ Our work <strong>“Automated Assessment of PPE Compliance with Fast Lightweight Deep Learning Based Computer Vision”</strong> is presented at the IISE Annual Conference 2026 in Arlington, TX.</p>
     </article>
 
     <article class="news-item">
       <div class="news-date">October 2025</div>
-      <p class="news-text">📌 Our work <strong>“Are LLMs the New Ergonomists? Predicting Lifting Risks with LLMs And Machine Learning”</strong> is presented at ASPIRE&mdash;The HFES International Annual Meeting 2025 in Chicago.</p>
+      <p class="news-text">🎙️ Our work <strong>“Are LLMs the New Ergonomists? Predicting Lifting Risks with LLMs And Machine Learning”</strong> is presented at ASPIRE&mdash;The HFES International Annual Meeting 2025 in Chicago.</p>
     </article>
 
     <article class="news-item">
       <div class="news-date">March 2025</div>
-      <p class="news-text">📌 Our work <strong>“Large Language Models for surgical simulation and education”</strong> is presented at the ACS Surgeons and Engineers: A Dialogue on Surgical Simulation Meeting 2025 in Chicago.</p>
+      <p class="news-text">🎙️ Our work <strong>“Large Language Models for surgical simulation and education”</strong> is presented at the ACS Surgeons and Engineers: A Dialogue on Surgical Simulation Meeting 2025 in Chicago.</p>
     </article>
 
     <article class="news-item">
       <div class="news-date">September 2024</div>
-      <p class="news-text">📌 Our work <strong>“Computer vision embedded post-processing algorithm on lifting risks”</strong> is presented at ASPIRE&mdash;The HFES International Annual Meeting 2024 in Phoenix.</p>
+      <p class="news-text">🖇️ Our work <strong>“Computer vision embedded post-processing algorithm on lifting risks”</strong> is presented at ASPIRE&mdash;The HFES International Annual Meeting 2024 in Phoenix.</p>
     </article>
 
     <article class="news-item">
       <div class="news-date">June 2024</div>
-      <p class="news-text">📌 Our work <strong>“Are LLMs the New Ergonomists? Predicting Lifting Risks with LLMs And Machine Learning”</strong> is presented at the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2024 in Seattle.</p>
+      <p class="news-text">🖇️ Our work <strong>“Are LLMs the New Ergonomists? Predicting Lifting Risks with LLMs And Machine Learning”</strong> is presented at the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2024 in Seattle.</p>
     </article>
 
     <article class="news-item">
       <div class="news-date">March 2024</div>
-      <p class="news-text">📌 Our work <strong>“Computer vision and tactile glove: A multimodal model in lifting task risk assessment”</strong> is presented at the 27th Annual Applied Ergonomics Conference (AEC) 2024 in Louisville, KY.</p>
+      <p class="news-text">🖇️ Our work <strong>“Computer vision and tactile glove: A multimodal model in lifting task risk assessment”</strong> is presented at the 27th Annual Applied Ergonomics Conference (AEC) 2024 in Louisville, KY.</p>
     </article>
   </div>
 </section>
