@@ -148,6 +148,11 @@ I am a third year PhD student at [Edwardson School of Industrial Engineering](ht
     </article>
 
     <article class="news-item">
+      <div class="news-date">March 2025</div>
+      <p class="news-text">Our work <strong>“Large Language Models for surgical simulation and education”</strong> is presented at the ACS Surgeons and Engineers: A Dialogue on Surgical Simulation Meeting 2025 in Chicago.</p>
+    </article>
+
+    <article class="news-item">
       <div class="news-date">September 2024</div>
       <p class="news-text">Our work <strong>“Computer vision embedded post-processing algorithm on lifting risks”</strong> is presented at ASPIRE&mdash;The HFES International Annual Meeting 2024 in Phoenix.</p>
     </article>
