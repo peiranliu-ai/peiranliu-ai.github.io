@@ -154,17 +154,17 @@ I am a third year PhD student at [Edwardson School of Industrial Engineering](ht
 
     <article class="news-item">
       <div class="news-date">September 2024</div>
-      <p class="news-text">🖇️ Our work <strong>“Computer vision embedded post-processing algorithm on lifting risks”</strong> is presented at ASPIRE&mdash;The HFES International Annual Meeting 2024 in Phoenix.</p>
+      <p class="news-text">📌 Our work <strong>“Computer vision embedded post-processing algorithm on lifting risks”</strong> is presented at ASPIRE&mdash;The HFES International Annual Meeting 2024 in Phoenix.</p>
     </article>
 
     <article class="news-item">
       <div class="news-date">June 2024</div>
-      <p class="news-text">🖇️ Our work <strong>“Are LLMs the New Ergonomists? Predicting Lifting Risks with LLMs And Machine Learning”</strong> is presented at the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2024 in Seattle.</p>
+      <p class="news-text">📌 Our work <strong>“Are LLMs the New Ergonomists? Predicting Lifting Risks with LLMs And Machine Learning”</strong> is presented at the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2024 in Seattle.</p>
     </article>
 
     <article class="news-item">
       <div class="news-date">March 2024</div>
-      <p class="news-text">🖇️ Our work <strong>“Computer vision and tactile glove: A multimodal model in lifting task risk assessment”</strong> is presented at the 27th Annual Applied Ergonomics Conference (AEC) 2024 in Louisville, KY.</p>
+      <p class="news-text">📌 Our work <strong>“Computer vision and tactile glove: A multimodal model in lifting task risk assessment”</strong> is presented at the 27th Annual Applied Ergonomics Conference (AEC) 2024 in Louisville, KY.</p>
     </article>
   </div>
 </section>
