@@ -5,6 +5,11 @@ category: manuscripts
 permalink: /publication/llm4ad
 link: https://ieeexplore.ieee.org/abstract/document/11477881
 excerpt: Autonomous driving, embodied AI, human-autonomy teaming, human-centric AI, large language models
+research_tags:
+  - Human Centric AI
+  - Software
+  - Data
+  - Agents
 date: 2026-04-08
 venue: 'Proceedings of the IEEE'
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/11477881'

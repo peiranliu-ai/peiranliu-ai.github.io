@@ -5,6 +5,12 @@ category: conferences
 permalink: /publication/llms-new-ergonomists
 link: https://journals.sagepub.com/doi/full/10.1177/10711813251370730
 excerpt: LLM, Ergonomics, Lifting risks
+research_tags:
+  - HFE
+  - Human Centric AI
+  - Software
+  - Data
+  - Agents
 date: 2025-09-13
 venue: 'Proceedings of the Human Factors and Ergonomics Society Annual Meeting'
 paperurl: 'https://journals.sagepub.com/doi/full/10.1177/10711813251370730'

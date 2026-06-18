@@ -75,6 +75,28 @@ author_profile: true
     box-shadow: 0 10px 22px rgba(33, 83, 120, 0.06);
   }
 
+  .research-filter-card {
+    cursor: pointer;
+    transition: transform 0.22s ease, box-shadow 0.22s ease, opacity 0.22s ease, border-color 0.22s ease;
+  }
+
+  .research-filter-card:hover,
+  .research-filter-card.is-active {
+    transform: translateY(-2px);
+    border-color: #86b9d7;
+    box-shadow: 0 16px 30px rgba(33, 83, 120, 0.12);
+  }
+
+  .research-filter-card.is-active {
+    outline: 2px solid rgba(44, 111, 158, 0.22);
+    outline-offset: 2px;
+  }
+
+  .research-filter-card.is-dimmed {
+    opacity: 0.46;
+    filter: grayscale(35%);
+  }
+
   .hdt-module__title {
     display: flex;
     align-items: center;
@@ -237,6 +259,110 @@ author_profile: true
     background: var(--ai-agents);
   }
 
+  .selected-publications {
+    max-width: 1120px;
+    margin: 2.1rem auto 0;
+  }
+
+  .selected-publications__header {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.35rem;
+    border-bottom: 1px solid #d7e2ea;
+  }
+
+  .selected-publications__header h2 {
+    margin: 0;
+    padding-bottom: 0.35rem;
+    color: #174d78;
+    font-size: 1.18rem;
+    line-height: 1.2;
+    border-bottom: 0;
+  }
+
+  .selected-publications__count {
+    padding-bottom: 0.42rem;
+    color: #6a7986;
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0;
+    white-space: nowrap;
+  }
+
+  .selected-publications__hint,
+  .selected-publications__status {
+    margin: 0.35rem 0 0.85rem;
+    color: #7a8793;
+    font-size: 0.68rem;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+
+  .selected-publications__status {
+    color: #3f6f8d;
+  }
+
+  .selected-publications__list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .selected-publication {
+    min-width: 0;
+    padding: 0.72rem 0.82rem;
+    border: 1px solid #d9e2ea;
+    border-left: 4px solid #2c6f9e;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 10px 22px rgba(33, 83, 120, 0.05);
+  }
+
+  .selected-publication.is-hidden {
+    display: none;
+  }
+
+  .selected-publication__title {
+    margin: 0 0 0.32rem;
+    color: #142236;
+    font-size: 0.73rem;
+    font-weight: 800;
+    line-height: 1.28;
+  }
+
+  .selected-publication__title a {
+    color: inherit;
+  }
+
+  .selected-publication__meta {
+    margin: 0 0 0.44rem;
+    color: #637382;
+    font-size: 0.58rem;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+
+  .selected-publication__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.26rem;
+  }
+
+  .selected-publication__tag {
+    display: inline-flex;
+    align-items: center;
+    min-height: 1.12rem;
+    padding: 0.12rem 0.42rem;
+    border-radius: 999px;
+    background: #edf3f7;
+    color: #526576;
+    font-size: 0.54rem;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
   @media (max-width: 1120px) {
     .research-focus {
       grid-template-columns: 1fr;
@@ -267,6 +393,16 @@ author_profile: true
     .orbit-label {
       font-size: 0.74rem;
     }
+
+    .selected-publications__header {
+      align-items: start;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .selected-publications__list {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
 
@@ -276,7 +412,7 @@ author_profile: true
     <p class="hdt-pillar__lead">The Digital Twin is a digital replica of the physical entity in the real world, which leverages big data and cloud/edge computing to benefit human machine system. My research is constructing high-fidelity human digital twins to understand and optimize human-machine interaction.</p>
 
     <div class="hdt-modules">
-      <div class="hdt-module">
+      <div class="hdt-module research-filter-card" data-research-filter="wearable-sensors" data-research-label="Wearable Sensors" role="button" tabindex="0" aria-pressed="false">
         <h3 class="hdt-module__title">
           <span class="hdt-module__icon"><img src="{{ base_path }}/assets/images/research-icons/wearable-sensors.png" alt="" aria-hidden="true"></span>
           Wearable Sensors
@@ -287,7 +423,7 @@ author_profile: true
         </div>
       </div>
 
-      <div class="hdt-module">
+      <div class="hdt-module research-filter-card" data-research-filter="hfe" data-research-label="HFE" role="button" tabindex="0" aria-pressed="false">
         <h3 class="hdt-module__title">
           <span class="hdt-module__icon"><img src="{{ base_path }}/assets/images/research-icons/human-factors.svg" alt="" aria-hidden="true"></span>
           HFE
@@ -300,7 +436,7 @@ author_profile: true
         </div>
       </div>
 
-      <div class="hdt-module">
+      <div class="hdt-module research-filter-card" data-research-filter="human-centric-ai" data-research-label="Human Centric AI" role="button" tabindex="0" aria-pressed="false">
         <h3 class="hdt-module__title">
           <span class="hdt-module__icon"><img src="{{ base_path }}/assets/images/research-icons/ai.svg" alt="" aria-hidden="true"></span>
           Human Centric AI
@@ -323,18 +459,121 @@ author_profile: true
       <div class="orbit-label orbit-label--software">Software</div>
     </div>
     <div class="wheel-legend" aria-label="AI flying wheel components">
-      <div class="wheel-legend__item wheel-legend__item--software">
+      <div class="wheel-legend__item wheel-legend__item--software research-filter-card" data-research-filter="software" data-research-label="Software" role="button" tabindex="0" aria-pressed="false">
         <h3>Software</h3>
         <p>Algorithms, computer vision, lightweight models, large language models, foundation models</p>
       </div>
-      <div class="wheel-legend__item wheel-legend__item--data">
+      <div class="wheel-legend__item wheel-legend__item--data research-filter-card" data-research-filter="data" data-research-label="Data" role="button" tabindex="0" aria-pressed="false">
         <h3>Data</h3>
         <p>Multimodal signals, vision and language communication data, benchmarks</p>
       </div>
-      <div class="wheel-legend__item wheel-legend__item--agents">
+      <div class="wheel-legend__item wheel-legend__item--agents research-filter-card" data-research-filter="agents" data-research-label="Agents" role="button" tabindex="0" aria-pressed="false">
         <h3>Agents</h3>
         <p>Tools, memory, code generation, and action</p>
       </div>
     </div>
   </section>
 </div>
+
+<section class="selected-publications" aria-label="Selected publications">
+  <div class="selected-publications__header">
+    <h2>Selected Publications</h2>
+    <div class="selected-publications__count" id="selected-publications-count">Showing all</div>
+  </div>
+  <p class="selected-publications__hint">💡 Hover over a research module card above to preview related publications. Click to lock the selection; click the same card again to clear it.</p>
+  <p class="selected-publications__status" id="selected-publications-status">Showing all selected publications.</p>
+
+  <div class="selected-publications__list" id="selected-publications-list">
+    {% for post in site.publications reversed %}
+      {% if post.research_tags %}
+        <article class="selected-publication" data-research-tags="{% for tag in post.research_tags %}{{ tag | slugify }}|{% endfor %}">
+          <h3 class="selected-publication__title">
+            {% if post.link %}
+              <a href="{{ post.link }}">{{ post.title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink" aria-label="Permalink for {{ post.title }}"><i class="fa fa-link" aria-hidden="true"></i></a>
+            {% else %}
+              <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+            {% endif %}
+          </h3>
+          <p class="selected-publication__meta">Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
+          <div class="selected-publication__tags" aria-label="Research interest tags">
+            {% for tag in post.research_tags %}
+              <span class="selected-publication__tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        </article>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<script>
+  (function () {
+    var cards = Array.prototype.slice.call(document.querySelectorAll('[data-research-filter]'));
+    var publications = Array.prototype.slice.call(document.querySelectorAll('.selected-publication'));
+    var status = document.getElementById('selected-publications-status');
+    var count = document.getElementById('selected-publications-count');
+    var lockedFilter = null;
+
+    function setCardState(filter) {
+      cards.forEach(function (card) {
+        var isActive = filter && card.dataset.researchFilter === filter;
+        card.classList.toggle('is-active', isActive);
+        card.classList.toggle('is-dimmed', Boolean(filter) && !isActive);
+        card.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+      });
+    }
+
+    function applyFilter(filter, label, locked) {
+      var visibleCount = 0;
+
+      publications.forEach(function (pub) {
+        var tags = pub.dataset.researchTags.split('|').filter(Boolean);
+        var isVisible = !filter || tags.indexOf(filter) !== -1;
+        pub.classList.toggle('is-hidden', !isVisible);
+        if (isVisible) visibleCount += 1;
+      });
+
+      setCardState(filter);
+      count.textContent = filter ? visibleCount + ' related' : 'Showing all';
+      status.textContent = filter
+        ? (locked ? 'Locked to ' : 'Previewing ') + label + ' related publications.'
+        : 'Showing all selected publications.';
+    }
+
+    function clearFilter() {
+      lockedFilter = null;
+      applyFilter(null, null, false);
+    }
+
+    cards.forEach(function (card) {
+      var filter = card.dataset.researchFilter;
+      var label = card.dataset.researchLabel;
+
+      card.addEventListener('mouseenter', function () {
+        if (!lockedFilter) applyFilter(filter, label, false);
+      });
+
+      card.addEventListener('mouseleave', function () {
+        if (!lockedFilter) clearFilter();
+      });
+
+      card.addEventListener('click', function () {
+        if (lockedFilter === filter) {
+          clearFilter();
+        } else {
+          lockedFilter = filter;
+          applyFilter(filter, label, true);
+        }
+      });
+
+      card.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          card.click();
+        }
+      });
+    });
+
+    applyFilter(null, null, false);
+  })();
+</script>

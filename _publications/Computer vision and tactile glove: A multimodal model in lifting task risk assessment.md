@@ -5,6 +5,12 @@ category: manuscripts
 permalink: /publication/computer-vision-tactile-glove-lifting-risk
 link: https://www.sciencedirect.com/science/article/abs/pii/S0003687025000493
 excerpt: Computer vision, Tactile gloves, Lifting risk prediction
+research_tags:
+  - Wearable Sensors
+  - HFE
+  - Human Centric AI
+  - Software
+  - Data
 date: 2025-09-01
 venue: 'Applied Ergonomics'
 paperurl: 'https://www.sciencedirect.com/science/article/abs/pii/S0003687025000493'

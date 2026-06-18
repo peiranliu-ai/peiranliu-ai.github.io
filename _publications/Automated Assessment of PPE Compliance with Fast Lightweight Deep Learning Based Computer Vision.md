@@ -5,6 +5,10 @@ category: manuscripts
 permalink: /publication/ppe-compliance-computer-vision
 link: https://www.tandfonline.com/doi/full/10.1080/24725838.2026.2671785
 excerpt: Personal protective equipment, computer vision, workplace safety, occupational health safety, ergonomics
+research_tags:
+  - Human Centric AI
+  - Software
+  - HFE
 date: 2026-01-01
 venue: 'IISE Transactions on Occupational Ergonomics and Human Factors'
 paperurl: 'https://www.tandfonline.com/doi/full/10.1080/24725838.2026.2671785'
