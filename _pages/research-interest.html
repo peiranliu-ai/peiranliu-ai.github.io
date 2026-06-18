@@ -232,11 +232,32 @@ author_profile: true
   }
 
   .wheel-legend__item h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.42rem;
     margin: 0 0 0.22rem;
     color: var(--ink);
     font-size: 0.74rem;
     font-weight: 800;
     line-height: 1.15;
+  }
+
+  .wheel-legend__icon {
+    display: inline-grid;
+    place-items: center;
+    width: 1.45rem;
+    height: 1.45rem;
+    flex: 0 0 1.45rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.62);
+    border: 1px solid rgba(20, 34, 54, 0.08);
+  }
+
+  .wheel-legend__icon img {
+    display: block;
+    width: 0.96rem;
+    height: 0.96rem;
+    object-fit: contain;
   }
 
   .wheel-legend__item p {
@@ -460,15 +481,15 @@ author_profile: true
     </div>
     <div class="wheel-legend" aria-label="AI flying wheel components">
       <div class="wheel-legend__item wheel-legend__item--software research-filter-card" data-research-filter="software" data-research-label="Software" role="button" tabindex="0" aria-pressed="false">
-        <h3>Software</h3>
+        <h3><span class="wheel-legend__icon"><img src="{{ base_path }}/assets/images/research-icons/software.svg" alt="" aria-hidden="true"></span><span>Software</span></h3>
         <p>Algorithms, computer vision, lightweight models, large language models, foundation models</p>
       </div>
       <div class="wheel-legend__item wheel-legend__item--data research-filter-card" data-research-filter="data" data-research-label="Data" role="button" tabindex="0" aria-pressed="false">
-        <h3>Data</h3>
+        <h3><span class="wheel-legend__icon"><img src="{{ base_path }}/assets/images/research-icons/data.svg" alt="" aria-hidden="true"></span><span>Data</span></h3>
         <p>Multimodal signals, vision and language communication data, benchmarks</p>
       </div>
       <div class="wheel-legend__item wheel-legend__item--agents research-filter-card" data-research-filter="agents" data-research-label="Agents" role="button" tabindex="0" aria-pressed="false">
-        <h3>Agents</h3>
+        <h3><span class="wheel-legend__icon"><img src="{{ base_path }}/assets/images/research-icons/agents.svg" alt="" aria-hidden="true"></span><span>Agents</span></h3>
         <p>Tools, memory, code generation, and action</p>
       </div>
     </div>
