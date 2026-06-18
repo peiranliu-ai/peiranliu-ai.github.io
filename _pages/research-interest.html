@@ -225,6 +225,10 @@ author_profile: true
   }
 
   .wheel-legend__item {
+    display: grid;
+    grid-template-columns: 3rem minmax(0, 1fr);
+    column-gap: 0.72rem;
+    align-items: center;
     padding: 0.58rem 0.68rem;
     border: 1px solid rgba(20, 34, 54, 0.08);
     border-radius: 8px;
@@ -232,9 +236,6 @@ author_profile: true
   }
 
   .wheel-legend__item h3 {
-    display: flex;
-    align-items: center;
-    gap: 0.42rem;
     margin: 0 0 0.22rem;
     color: var(--ink);
     font-size: 0.74rem;
@@ -245,9 +246,9 @@ author_profile: true
   .wheel-legend__icon {
     display: inline-grid;
     place-items: center;
-    width: 1.45rem;
-    height: 1.45rem;
-    flex: 0 0 1.45rem;
+    width: 2.8rem;
+    height: 2.8rem;
+    align-self: stretch;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.62);
     border: 1px solid rgba(20, 34, 54, 0.08);
@@ -255,9 +256,13 @@ author_profile: true
 
   .wheel-legend__icon img {
     display: block;
-    width: 0.96rem;
-    height: 0.96rem;
+    width: 1.85rem;
+    height: 1.85rem;
     object-fit: contain;
+  }
+
+  .wheel-legend__body {
+    min-width: 0;
   }
 
   .wheel-legend__item p {
@@ -481,16 +486,25 @@ author_profile: true
     </div>
     <div class="wheel-legend" aria-label="AI flying wheel components">
       <div class="wheel-legend__item wheel-legend__item--software research-filter-card" data-research-filter="software" data-research-label="Software" role="button" tabindex="0" aria-pressed="false">
-        <h3><span class="wheel-legend__icon"><img src="{{ base_path }}/assets/images/research-icons/software.svg" alt="" aria-hidden="true"></span><span>Software</span></h3>
-        <p>Algorithms, computer vision, lightweight models, large language models, foundation models</p>
+        <span class="wheel-legend__icon"><img src="{{ base_path }}/assets/images/research-icons/software.svg" alt="" aria-hidden="true"></span>
+        <div class="wheel-legend__body">
+          <h3>Software</h3>
+          <p>Algorithms, computer vision, lightweight models, large language models, foundation models</p>
+        </div>
       </div>
       <div class="wheel-legend__item wheel-legend__item--data research-filter-card" data-research-filter="data" data-research-label="Data" role="button" tabindex="0" aria-pressed="false">
-        <h3><span class="wheel-legend__icon"><img src="{{ base_path }}/assets/images/research-icons/data.svg" alt="" aria-hidden="true"></span><span>Data</span></h3>
-        <p>Multimodal signals, vision and language communication data, benchmarks</p>
+        <span class="wheel-legend__icon"><img src="{{ base_path }}/assets/images/research-icons/data.svg" alt="" aria-hidden="true"></span>
+        <div class="wheel-legend__body">
+          <h3>Data</h3>
+          <p>Multimodal signals, vision and language communication data, benchmarks</p>
+        </div>
       </div>
       <div class="wheel-legend__item wheel-legend__item--agents research-filter-card" data-research-filter="agents" data-research-label="Agents" role="button" tabindex="0" aria-pressed="false">
-        <h3><span class="wheel-legend__icon"><img src="{{ base_path }}/assets/images/research-icons/agents.svg" alt="" aria-hidden="true"></span><span>Agents</span></h3>
-        <p>Tools, memory, code generation, and action</p>
+        <span class="wheel-legend__icon"><img src="{{ base_path }}/assets/images/research-icons/agents.svg" alt="" aria-hidden="true"></span>
+        <div class="wheel-legend__body">
+          <h3>Agents</h3>
+          <p>Tools, memory, code generation, and action</p>
+        </div>
       </div>
     </div>
   </section>
