@@ -28,9 +28,6 @@ author_profile: true
     --ai-data: #dbeaf1;
     --ai-agents: #e9f1e2;
     --ai-software: #f1e7d4;
-    --ai-data-border: #2c6f9e;
-    --ai-agents-border: #4f7f45;
-    --ai-software-border: #b46a24;
     display: grid;
     grid-template-columns: minmax(500px, 1fr) minmax(360px, 420px);
     gap: 1.1rem;
@@ -171,43 +168,13 @@ author_profile: true
     aspect-ratio: 1;
     margin: 0 auto;
     border-radius: 50%;
-    background: transparent;
-    box-shadow: 0 26px 62px rgba(32, 61, 83, 0.12);
-  }
-
-  .orbit-wheel {
-    position: absolute;
-    inset: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-  }
-
-  .orbit-wheel__segment {
-    stroke-width: 1.8;
-    stroke-linejoin: round;
-    vector-effect: non-scaling-stroke;
-  }
-
-  .orbit-wheel__segment--data {
-    fill: var(--ai-data);
-    stroke: var(--ai-data-border);
-  }
-
-  .orbit-wheel__segment--agents {
-    fill: var(--ai-agents);
-    stroke: var(--ai-agents-border);
-  }
-
-  .orbit-wheel__segment--software {
-    fill: var(--ai-software);
-    stroke: var(--ai-software-border);
+    background: conic-gradient(from 0deg, var(--ai-data) 0 120deg, var(--ai-agents) 120deg 240deg, var(--ai-software) 240deg 360deg);
+    border: 2px solid rgba(44, 111, 158, 0.56);
+    box-shadow: inset 0 0 0 1px rgba(23, 77, 120, 0.12), 0 26px 62px rgba(32, 61, 83, 0.12);
   }
 
   .orbit-center {
     position: absolute;
-    z-index: 2;
     inset: 30.5%;
     display: grid;
     place-items: center;
@@ -226,7 +193,6 @@ author_profile: true
 
   .orbit-label {
     position: absolute;
-    z-index: 2;
     color: var(--ink);
     font-size: 0.82rem;
     font-weight: 800;
@@ -513,11 +479,6 @@ author_profile: true
   <section class="ai-panel" aria-label="Human centric AI research interests">
     <p class="orbit-title">AI Flying Wheel for Human Digital Twin</p>
     <div class="orbit">
-      <svg class="orbit-wheel" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
-        <path class="orbit-wheel__segment orbit-wheel__segment--data" d="M 50 50 L 50 2 A 48 48 0 0 1 91.57 74 Z"></path>
-        <path class="orbit-wheel__segment orbit-wheel__segment--agents" d="M 50 50 L 91.57 74 A 48 48 0 0 1 8.43 74 Z"></path>
-        <path class="orbit-wheel__segment orbit-wheel__segment--software" d="M 50 50 L 8.43 74 A 48 48 0 0 1 50 2 Z"></path>
-      </svg>
       <div class="orbit-center">Human<br>Centric AI</div>
       <div class="orbit-label orbit-label--data">Data</div>
       <div class="orbit-label orbit-label--agents">Agents</div>
