@@ -62,6 +62,20 @@
   font-size: $type-size-7;
 }
 
+.page__footer-attribution {
+  margin-top: 0.35rem;
+  color: var(--global-text-color-light);
+  font-family: $global-font-family;
+  font-size: 0.58rem;
+  line-height: 1.45;
+  opacity: 0.68;
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
+
 .page__footer-follow {
   ul {
     margin: 0;
