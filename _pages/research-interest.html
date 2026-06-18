@@ -185,37 +185,23 @@ author_profile: true
   }
 
   .orbit-wheel__segment {
-    stroke: none;
-  }
-
-  .orbit-wheel__rim {
-    fill: none;
-    stroke-width: 4.5;
-    stroke-linecap: butt;
+    stroke-width: 1.8;
+    stroke-linejoin: round;
     vector-effect: non-scaling-stroke;
   }
 
   .orbit-wheel__segment--data {
     fill: var(--ai-data);
-  }
-
-  .orbit-wheel__rim--data {
     stroke: var(--ai-data-border);
   }
 
   .orbit-wheel__segment--agents {
     fill: var(--ai-agents);
-  }
-
-  .orbit-wheel__rim--agents {
     stroke: var(--ai-agents-border);
   }
 
   .orbit-wheel__segment--software {
     fill: var(--ai-software);
-  }
-
-  .orbit-wheel__rim--software {
     stroke: var(--ai-software-border);
   }
 
@@ -527,13 +513,10 @@ author_profile: true
   <section class="ai-panel" aria-label="Human centric AI research interests">
     <p class="orbit-title">AI Flying Wheel for Human Digital Twin</p>
     <div class="orbit">
-      <svg class="orbit-wheel" viewBox="-3 -3 106 106" aria-hidden="true" focusable="false">
+      <svg class="orbit-wheel" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
         <path class="orbit-wheel__segment orbit-wheel__segment--data" d="M 50 50 L 50 2 A 48 48 0 0 1 91.57 74 Z"></path>
         <path class="orbit-wheel__segment orbit-wheel__segment--agents" d="M 50 50 L 91.57 74 A 48 48 0 0 1 8.43 74 Z"></path>
         <path class="orbit-wheel__segment orbit-wheel__segment--software" d="M 50 50 L 8.43 74 A 48 48 0 0 1 50 2 Z"></path>
-        <path class="orbit-wheel__rim orbit-wheel__rim--data" d="M 50 2 A 48 48 0 0 1 91.57 74"></path>
-        <path class="orbit-wheel__rim orbit-wheel__rim--agents" d="M 91.57 74 A 48 48 0 0 1 8.43 74"></path>
-        <path class="orbit-wheel__rim orbit-wheel__rim--software" d="M 8.43 74 A 48 48 0 0 1 50 2"></path>
       </svg>
       <div class="orbit-center">Human<br>Centric AI</div>
       <div class="orbit-label orbit-label--data">Data</div>
