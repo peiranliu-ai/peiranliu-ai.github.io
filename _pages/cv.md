@@ -42,7 +42,7 @@ Work experience
 
 * May 2023 - August 2023: Product Manager [Intern]
   * BrainCo Inc
-  * Supervisor: Yang Zhang
+  * Supervisors: Yang Zhang and [Jinchen Yang](https://www.linkedin.com/in/jinchen-yang-phd-70746a51/)
 
 
 <!--
