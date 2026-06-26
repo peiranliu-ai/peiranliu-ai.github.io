@@ -24,23 +24,23 @@ Education
 
 Work experience
 ======
-* August 2023 - Present: Research Assistant
+* 2024 - Present: Research Assistant
   * Purdue University
   * Supervisor: Denny Yu
 
-* April 2025 - June 2025: Research Scientist [Intern]
+* June 2025 - August 2025: Research Scientist [Intern]
   * SpatialVerse
   * Supervisor: Zihan Zhou
 
-* June 2025 - Sepember 2025: Product Research and Development [Intern]
+* April 2025 - June 2025: Product Research and Development [Intern]
   * Coohom
   * Supervisor: Tianzhe Long
 
-* May 2024 - September 2024: Research Scientist [Intern]
+* May 2024 - August 2024: Research Scientist [Intern]
   * Zhejiang University
   * Supervisor: Jianwei Yin
 
-* May 2023 - September 2023: Product Manager [Intern]
+* May 2023 - August 2023: Product Manager [Intern]
   * BrainCo Inc
   * Supervisor: Yang Zhang
 
