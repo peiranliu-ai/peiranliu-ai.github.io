@@ -26,7 +26,7 @@ Work experience
 ======
 * 2024 - Present: Research Assistant
   * Purdue University
-  * Supervisor: Denny Yu
+  * Supervisor: [Denny Yu](https://www.linkedin.com/in/dennyzyu)
 
 * June 2025 - August 2025: Research Scientist [Intern]
   * SpatialVerse
