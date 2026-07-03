@@ -8,8 +8,6 @@ excerpt: Quantum Computing, Quantum AI, Quantum Digital Twin, Quantum Cognition,
 research_tags:
   - HFE
   - Human Centric AI
-  - Software
-  - Data
 date: 2026-01-01
 venue: 'Frontiers in Industrial Engineering. Purdue Quantum AI. PQAI 2025'
 paperurl: 'https://link.springer.com/chapter/10.1007/978-981-95-7829-0_15'
