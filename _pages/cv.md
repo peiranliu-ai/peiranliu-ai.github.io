@@ -80,6 +80,13 @@ Service and leadership
 * Currently signed in to 43 different slack teams
   -->
 
+Grants and Research Support
+======
+* NSF ACCESS Discover Research Computing Allocation, CIS261243
+  * Clinically Meaningful Temporal Segments of Long Unstructured Laparoscopic Robotic Videos
+  * PI: Vaneet Aggarwal; **Co-PI: Peiran Liu**, Purdue University. Awarded 750,000 ACCESS Credits for GPU/HPC computing resources to support AI-based temporal segmentation and analysis of long unstructured laparoscopic robotic surgery videos.
+  * July 2026 - July 2027.
+
 Reviewer for
 ======
 * IEEE Transactions on Human Machine Systems
