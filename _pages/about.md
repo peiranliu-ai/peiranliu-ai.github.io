@@ -138,6 +138,11 @@ I am a third year PhD student at [Edwardson School of Industrial Engineering](ht
     </article>
 
     <article class="news-item">
+      <div class="news-date">July 2026</div>
+      <p class="news-text">🎉 We were awarded 750,000 ACCESS Credits for GPU/HPC computing resources by the NSF ACCESS Discover Research Computing Allocation, CIS261243, for <strong>“Clinically Meaningful Temporal Segments of Long Unstructured Laparoscopic Robotic Videos”</strong>. PI: Vaneet Aggarwal; Co-PI: Peiran Liu, Purdue University. July 2026–July 2027.</p>
+    </article>
+
+    <article class="news-item">
       <div class="news-date">May 2026</div>
       <p class="news-text">🎙️ Our work <strong>“Automated Assessment of PPE Compliance with Fast Lightweight Deep Learning Based Computer Vision”</strong> is presented at the IISE Annual Conference 2026 in Arlington, TX.</p>
     </article>
